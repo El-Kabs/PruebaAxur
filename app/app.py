@@ -18,6 +18,10 @@ peticiones = []
 async def health(request: Request):
     return "Hello World"
 
+@app.get(PATH + "axur")
+async def axur(request: Request):
+    secret = "z&4gAqHw!bX9C7O#h*4au779k1r"
+    return secret
 
 @app.post(PATH + "test")
 async def test(request: Request):
