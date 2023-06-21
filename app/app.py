@@ -23,6 +23,12 @@ async def axur(request: Request):
     secret = "z&4gAqHw!bX9C7O#h*4au779k1r"
     return secret
 
+#stacy.kiehn4935@quartzotech.com
+@app.get(PATH + "tokenv2")
+async def axur(request: Request):
+    secret = "stacy.kiehn4935@quartzotech.com "
+    return secret
+
 @app.post(PATH + "test")
 async def test(request: Request):
     body = await request.json()
